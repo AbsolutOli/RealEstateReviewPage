@@ -105,24 +105,37 @@ body {
 .page__main {}
 
 .main-block {
-    padding: 185px 0 0 0;
+    padding-bottom: 110px;
     position: relative;
 
-    .main-block__container {}
+    @media (max-width: 1199.98px) {
+        padding-bottom: 55px;
+    }
+
+    .main-block__container {
+        padding-top: 185px;
+        position: relative;
+
+        @media (max-width: 1199.98px) {
+            padding-top: 125px;
+        }
+
+        &:after {
+            content: "";
+            background-color: #BDCCFF;
+            position: absolute;
+            height: 100%;
+            width: 200%;
+            left: 63.3%;
+            top: 0;
+        }
+    }
 
     .main-block__body {}
 
     .main-block__partners {}
 
-    &:after {
-        content: "";
-        background-color: #BDCCFF;
-        position: absolute;
-        height: 100%;
-        width: 200%;
-        left: 63.3%;
-        top: 0;
-    }
+
 }
 
 
@@ -132,15 +145,20 @@ body {
     align-items: flex-start;
     position: relative;
 
+    @media (max-width: 1199.98px) {
+        display: block;
+        margin: 0 0 30px 0;
+    }
+
     .body-main-block__content {
         flex: 0 1 50%;
-
     }
 
     .body-main-block__slider {
         flex: 0 1 50%;
         min-width: 0;
         box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.01), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.02), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
+
     }
 }
 
@@ -193,12 +211,22 @@ body {
 
 .content-main-block {
     padding: 40px 0 0 0;
+    position: relative;
+    z-index: 2;
 
     .content-main-block__body {
         padding: 0 68px 0 0;
 
+        @media (max-width: 767.98px) {
+            padding: 0 0 0 0;
+        }
+
         &:not(:last-child) {
             margin: 0 0 48px 0;
+
+            @media (max-width: 767.98px) {
+                margin: 0 0 24px 0;
+            }
         }
     }
 
@@ -222,6 +250,11 @@ body {
 
         &:not(:last-child) {
             margin: 0 0 23px 0;
+
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 34px;
         }
     }
 
@@ -243,10 +276,22 @@ body {
     margin-right: -188px;
     position: relative;
     z-index: 2;
-    background: url('../../img/icons/home.svg') 33px 50% no-repeat;
+    background: #fff url('../../img/icons/home.svg') 33px 50% no-repeat;
     color: #FFFFFF;
 
     box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.01), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.02), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
+
+    @media (max-width: 1199.98px) {
+        margin: 0 0px 30px 0;
+        height: 100%;
+        display: block;
+    }
+
+    @media (max-width: 767.98px) {
+        background: none;
+        background-color: #fff;
+        flex-direction: column;
+    }
 
     .form-main-block__input {
         padding: 29.5px 0 29.5px 74px;
@@ -262,6 +307,14 @@ body {
             font-weight: 400;
             letter-spacing: 0.2px;
             line-height: 120%;
+
+            @media (max-width: 479.98px) {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            padding: 15px 0 15px 18px;
         }
     }
 
@@ -276,12 +329,25 @@ body {
         letter-spacing: 0.17px;
         line-height: 120%;
         padding: 5px 15px;
+
+        @media (max-width: 767.98px) {
+            width: 100%;
+            flex: 1 1 auto;
+            height: 66px;
+        }
     }
 }
 
 
 .partners-main-block {
-    max-width: 67%;
+    max-width: 62%;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 1199.98px) {
+
+        max-width: none;
+    }
 
     .partners-main-block__label {
         color: #31353B;
@@ -296,8 +362,13 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 5px;
+
         align-items: center;
+
+        @media (max-width: 767.98px) {
+            justify-content: center;
+            gap: 25px;
+        }
     }
 
     .partners-main-block__item {
