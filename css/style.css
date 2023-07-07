@@ -521,3 +521,102 @@ body {
 .partners-main-block .partners-main-block__item img {
   width: 100%;
 }
+
+.how {
+  padding: 110px 0 110px 0;
+}
+.how .how__title {
+  margin: 0 0 70px 0;
+}
+.how .how__items {
+  display: -ms-grid;
+  display: grid;
+  padding: 0 35px;
+  -ms-grid-columns: minmax(auto, 260px) 30px minmax(auto, 260px) 30px minmax(auto, 260px);
+  grid-template-columns: repeat(3, minmax(auto, 260px));
+  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.title.title_center {
+  text-align: center;
+}
+
+.item-how {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  position: relative;
+}
+.item-how:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 41px;
+  width: 100%;
+  height: 11px;
+  -webkit-transform: translate(86.5%, 0);
+          transform: translate(86.5%, 0);
+  background: url("../../img/main/how/lineitem.svg") 0 0 no-repeat;
+  max-width: 210px;
+}
+.item-how .item-how__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 50px 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+}
+.item-how .item-how__title {
+  margin: 0 0 15px 0;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.item-how .item-how__text {
+  color: #333;
+  font-weight: 400;
+  line-height: 162%;
+}
+
+.item-how_1 .item-how__icon {
+  background: #9672FF;
+  -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(150, 114, 255, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(150, 114, 255, 0.03), 0px 20px 13px 0px rgba(150, 114, 255, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(150, 114, 255, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(150, 114, 255, 0.05), 0px 100px 80px 0px rgba(150, 114, 255, 0.07);
+          box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(150, 114, 255, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(150, 114, 255, 0.03), 0px 20px 13px 0px rgba(150, 114, 255, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(150, 114, 255, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(150, 114, 255, 0.05), 0px 100px 80px 0px rgba(150, 114, 255, 0.07);
+}
+
+.item-how_2 .item-how__icon {
+  background: #4DDFFD;
+  -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(77, 223, 253, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(77, 223, 253, 0.03), 0px 20px 13px 0px rgba(77, 223, 253, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(77, 223, 253, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(77, 223, 253, 0.05), 0px 100px 80px 0px rgba(77, 223, 253, 0.07);
+          box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(77, 223, 253, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(77, 223, 253, 0.03), 0px 20px 13px 0px rgba(77, 223, 253, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(77, 223, 253, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(77, 223, 253, 0.05), 0px 100px 80px 0px rgba(77, 223, 253, 0.07);
+}
+.item-how_2:not(:last-child)::after {
+  -webkit-transform: translate(86.5%, 0) rotate(180deg);
+          transform: translate(86.5%, 0) rotate(180deg);
+}
+
+.item-how_3 .item-how__icon {
+  background: #F2B8EC;
+  -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(242, 184, 236, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(242, 184, 236, 0.03), 0px 20px 13px 0px rgba(242, 184, 236, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(242, 184, 236, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(242, 184, 236, 0.05), 0px 100px 80px 0px rgba(242, 184, 236, 0.07);
+          box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(242, 184, 236, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(242, 184, 236, 0.03), 0px 20px 13px 0px rgba(242, 184, 236, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(242, 184, 236, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(242, 184, 236, 0.05), 0px 100px 80px 0px rgba(242, 184, 236, 0.07);
+}

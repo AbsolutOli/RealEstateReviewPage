@@ -207,8 +207,6 @@ body {
     }
 }
 
-
-
 .content-main-block {
     padding: 40px 0 0 0;
     position: relative;
@@ -268,7 +266,6 @@ body {
 
     .content-main-block__form {}
 }
-
 
 .form-main-block {
     display: flex;
@@ -338,7 +335,6 @@ body {
     }
 }
 
-
 .partners-main-block {
     max-width: 62%;
     position: relative;
@@ -375,5 +371,112 @@ body {
         img {
             width: 100%;
         }
+    }
+}
+
+//=====|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|HOW|=====//
+.page__how {}
+
+.how {
+    padding: 110px 0 110px 0;
+
+    .how_container {}
+
+    .how__title {
+        margin: 0 0 70px 0;
+    }
+
+    .how__items {
+        display: grid;
+        padding: 0 35px;
+        grid-template-columns: repeat(3, minmax(auto, 260px));
+        gap: 30px;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .how__item {}
+}
+
+.title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+
+    &.title_center {
+        text-align: center;
+    }
+}
+
+
+
+
+.item-how {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    position: relative;
+
+
+    &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 41px;
+        width: 100%;
+        height: 11px;
+        transform: translate(86.5%, 0);
+        background: url('../../img/main/how/lineitem.svg') 0 0 no-repeat;
+        max-width: 210px;
+    }
+
+    .item-how__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 50px 0;
+        width: 90px;
+        height: 90px;
+        border-radius: 20px;
+    }
+
+    .item-how__title {
+        margin: 0 0 15px 0;
+        color: #000;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    .item-how__text {
+        color: #333;
+        font-weight: 400;
+        line-height: 162%;
+    }
+}
+
+.item-how_1 {
+    & .item-how__icon {
+        background: #9672FF;
+        box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(150, 114, 255, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(150, 114, 255, 0.03), 0px 20px 13px 0px rgba(150, 114, 255, 0.04), 0px 38.51852035522461px 25.481481552124023px 0px rgba(150, 114, 255, 0.04), 0px 64.81481170654297px 46.85185241699219px 0px rgba(150, 114, 255, 0.05), 0px 100px 80px 0px rgba(150, 114, 255, 0.07);
+    }
+}
+
+.item-how_2 {
+    & .item-how__icon {
+        background: #4DDFFD;
+        box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(77, 223, 253, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(77, 223, 253, 0.03), 0px 20px 13px 0px rgba(77, 223, 253, 0.04), 0px 38.51852035522461px 25.481481552124023px 0px rgba(77, 223, 253, 0.04), 0px 64.81481170654297px 46.85185241699219px 0px rgba(77, 223, 253, 0.05), 0px 100px 80px 0px rgba(77, 223, 253, 0.07);
+    }
+
+    &:not(:last-child)::after {
+        transform: translate(86.5%, 0) rotate(180deg);
+    }
+}
+
+.item-how_3 {
+    & .item-how__icon {
+        background: #F2B8EC;
+        box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(242, 184, 236, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(242, 184, 236, 0.03), 0px 20px 13px 0px rgba(242, 184, 236, 0.04), 0px 38.51852035522461px 25.481481552124023px 0px rgba(242, 184, 236, 0.04), 0px 64.81481170654297px 46.85185241699219px 0px rgba(242, 184, 236, 0.05), 0px 100px 80px 0px rgba(242, 184, 236, 0.07);
     }
 }
