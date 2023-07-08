@@ -873,3 +873,151 @@ body {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+.featured {
+  padding: 110px 0 110px 0;
+}
+@media (max-width: 990.98px) {
+  .featured {
+    padding: 70px 0 70px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .featured {
+    padding: 30px 0 30px 0;
+  }
+}
+.featured__title {
+  margin: 0 0 95px 0;
+}
+@media (max-width: 767.98px) {
+  .featured__title {
+    margin: 0 0 50px 0;
+  }
+}
+.featured__body {
+  padding: 40px 40px 80px 40px;
+  background-color: #F1FFFF;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 77px;
+     -moz-column-gap: 77px;
+          column-gap: 77px;
+  row-gap: 40px;
+  -ms-grid-columns: 1fr 77px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 990.98px) {
+  .featured__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767.98px) {
+  .featured__body {
+    margin: 0 -15px;
+    padding: 20px 15px 40px 15px;
+  }
+}
+.images-featured {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+.images-featured__item img {
+  max-width: 100%;
+}
+.images-featured__item_mini {
+  margin: -114px 10% 0 10%;
+}
+.images-featured__item_mini img {
+  -webkit-box-shadow: 48px 58px 44px 0px rgba(0, 0, 0, 0.09), 0px 3.0185184479px 3.1481480598px 0px rgba(0, 0, 0, 0.01), 0px 13.2814817429px 6.5185184479px 0px rgba(0, 0, 0, 0.02), 0px 32.5999984741px 13px 0px rgba(0, 0, 0, 0.02), 0px 62.7851867676px 25.4814815521px 0px rgba(0, 0, 0, 0.02), 0px 105.648147583px 46.851852417px 0px rgba(0, 0, 0, 0.03);
+          box-shadow: 48px 58px 44px 0px rgba(0, 0, 0, 0.09), 0px 3.0185184479px 3.1481480598px 0px rgba(0, 0, 0, 0.01), 0px 13.2814817429px 6.5185184479px 0px rgba(0, 0, 0, 0.02), 0px 32.5999984741px 13px 0px rgba(0, 0, 0, 0.02), 0px 62.7851867676px 25.4814815521px 0px rgba(0, 0, 0, 0.02), 0px 105.648147583px 46.851852417px 0px rgba(0, 0, 0, 0.03);
+}
+
+.content-featured__body {
+  padding: 40px 0 0 0;
+}
+@media (min-width: 990.98px) {
+  .content-featured__body {
+    max-width: 412px;
+  }
+}
+.content-featured__title {
+  color: #000;
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.content-featured__title:not(:last-child) {
+  margin: 0 0 28px 0;
+}
+@media (max-width: 767.98px) {
+  .content-featured__title {
+    font-size: 24px;
+  }
+}
+.content-featured__text {
+  color: #545A58;
+  font-weight: 400;
+  line-height: 150%;
+}
+.content-featured__text:not(:last-child) {
+  margin: 0 0 42px 0;
+}
+@media (min-width: 990.98px) {
+  .content-featured__text {
+    max-width: 344px;
+  }
+}
+.content-featured__options {
+  display: -ms-grid;
+  display: grid;
+  gap: 35px;
+  -ms-grid-columns: 1fr 35px 1fr 35px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 0 54px 0;
+}
+@media (max-width: 479.98px) {
+  .content-featured__options {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 0 35px 0;
+  }
+}
+.content-featured__button {
+  display: block;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15.5px 37.5px;
+  background: #F85A47;
+  -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+          box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  line-height: 150%;
+}
+.content-featured__button:hover {
+  background-color: #c0493b;
+}
+
+.options-content-featured__label {
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0 0 12px 0;
+}
+.options-content-featured__value {
+  color: #545A58;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 120%;
+}
