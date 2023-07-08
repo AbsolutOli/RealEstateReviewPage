@@ -376,6 +376,7 @@ body {
     margin: 0 0px 30px 0;
     height: 100%;
     display: block;
+    background: #fff url("../../img/icons/home.svg") 33px 23% no-repeat;
   }
 }
 @media (max-width: 767.98px) {
@@ -469,6 +470,15 @@ body {
   line-height: 120%;
   padding: 5px 15px;
 }
+@media (max-width: 1199.98px) {
+  .form-main-block .form-main-block__button {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    height: 86px;
+  }
+}
 @media (max-width: 767.98px) {
   .form-main-block .form-main-block__button {
     width: 100%;
@@ -525,16 +535,33 @@ body {
 .how {
   padding: 110px 0 110px 0;
 }
+@media (max-width: 990.98px) {
+  .how {
+    padding: 70px 0 70px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .how {
+    padding: 30px 0 30px 0;
+  }
+}
 .how .how__title {
   margin: 0 0 70px 0;
+}
+@media (max-width: 767.98px) {
+  .how .how__title {
+    margin: 0 0 45px 0;
+  }
 }
 .how .how__items {
   display: -ms-grid;
   display: grid;
-  padding: 0 35px;
   -ms-grid-columns: minmax(auto, 260px) 30px minmax(auto, 260px) 30px minmax(auto, 260px);
   grid-template-columns: repeat(3, minmax(auto, 260px));
-  gap: 30px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 45px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -542,11 +569,27 @@ body {
       -ms-flex-align: start;
           align-items: start;
 }
+@media (min-width: 990.98px) {
+  .how .how__items {
+    padding: 0 35px;
+  }
+}
+@media (max-width: 767.98px) {
+  .how .how__items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 .title {
   color: #000;
   font-size: 40px;
   font-weight: 600;
   line-height: 120%;
+}
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 30px;
+  }
 }
 .title.title_center {
   text-align: center;
@@ -564,12 +607,30 @@ body {
   position: absolute;
   right: 0;
   top: 41px;
-  width: 100%;
+  width: 210px;
   height: 11px;
   -webkit-transform: translate(86.5%, 0);
           transform: translate(86.5%, 0);
-  background: url("../../img/main/how/lineitem.svg") 0 0 no-repeat;
-  max-width: 210px;
+  background: url("../../img/main/how/lineitem.svg") 0 0/100% no-repeat;
+}
+@media (max-width: 1199.98px) {
+  .item-how:not(:last-child)::after {
+    width: 170px;
+    -webkit-transform: translate(63%, 0);
+            transform: translate(63%, 0);
+  }
+}
+@media (max-width: 990.98px) {
+  .item-how:not(:last-child)::after {
+    width: 100px;
+    -webkit-transform: translate(63%, 0);
+            transform: translate(63%, 0);
+  }
+}
+@media (max-width: 767.98px) {
+  .item-how:not(:last-child)::after {
+    display: none;
+  }
 }
 .item-how .item-how__icon {
   display: -webkit-box;
@@ -585,6 +646,11 @@ body {
   width: 90px;
   height: 90px;
   border-radius: 20px;
+}
+@media (max-width: 767.98px) {
+  .item-how .item-how__icon {
+    margin: 0 0 25px 0;
+  }
 }
 .item-how .item-how__title {
   margin: 0 0 15px 0;
@@ -613,6 +679,12 @@ body {
 .item-how_2:not(:last-child)::after {
   -webkit-transform: translate(86.5%, 0) rotate(180deg);
           transform: translate(86.5%, 0) rotate(180deg);
+}
+@media (max-width: 1199.98px) {
+  .item-how_2:not(:last-child)::after {
+    -webkit-transform: translate(63%, 0);
+            transform: translate(63%, 0);
+  }
 }
 
 .item-how_3 .item-how__icon {
