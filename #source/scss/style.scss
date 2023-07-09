@@ -31,11 +31,6 @@ body {
     }
 }
 
-.item-reviews {
-
-    &__raiting {}
-}
-
 .simple-rating {
     position: relative;
     font-size: 24px;
@@ -66,9 +61,12 @@ body {
         top: 0;
         left: 0;
 
-        &:checked,
         &:checked~.simple-rating__label {
             color: #FBB040;
+        }
+
+        &:checked~.simple-rating__label:hover {
+            color: #ffef9f;
         }
     }
 
@@ -85,8 +83,7 @@ body {
         }
 
         &:hover,
-        &:hover~&,
-        &:checked~&:hover {
+        &:hover~& {
             color: #ffef9f;
         }
     }
@@ -944,6 +941,100 @@ body {
     &__value {
         color: #545A58;
         font-size: 17px;
+        font-weight: 400;
+        line-height: 120%;
+    }
+}
+
+//=====|REVIEWS|REVIEWS|REVIEWS|REVIEWS|REVIEWS|REVIEWS|REVIEWS|REVIEWS|REVIEWS|REVIEWS|REVIEWS|REVIEWS|=====//
+.page {
+
+    &__reviews {}
+}
+
+.reviews {
+    padding: 90px 0 85px 0;
+
+    @media (max-width: 990.98px) {
+        padding: 60px 0 50px 0;
+    }
+
+    @media (max-width: 767.98px) {
+        padding: 30px 0 30px 0;
+    }
+
+    &__container {}
+
+    &__title {
+        margin: 0 0 50px 0;
+        max-width: 570px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        gap: 20px;
+    }
+
+    &__item {}
+}
+
+.item-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 52px 38px;
+    color: inherit;
+    border-radius: 10px;
+    border: 1px solid #EBEBEB;
+    background: #FFF;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        border: 1px solid transparent;
+        box-shadow: 3px 44px 54px 0px rgba(0, 0, 0, 0.08), 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.01), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.02), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
+    }
+
+    &__raiting {
+        margin: 0 0 33.5px 0;
+    }
+
+    &__text {
+        flex: 1 1 auto;
+        color: #333333;
+        font-weight: 400;
+        line-height: 175%;
+
+        &:not(:last-child) {
+            margin: 0 0 53px 0;
+        }
+    }
+
+    &__author {}
+}
+
+.author-item-reviews {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__avatar {
+        flex: 0 0 48px;
+        border-radius: 48px;
+        overflow: hidden;
+    }
+
+    &__body {}
+
+    &__name {
+        color: #333;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    &__location {
+        color: #666666;
+        font-size: 14px;
         font-weight: 400;
         line-height: 120%;
     }
