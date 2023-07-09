@@ -258,7 +258,7 @@ body {
         position: static;
         width: 11px;
         height: 20px;
-        background: url('../../img/icons/arrow.svg') 0 0 / 100% no-repeat;
+        background: url('../img/icons/arrow.svg') 0 0 / 100% no-repeat;
     }
 
     &.swiper-button-prev {
@@ -332,7 +332,7 @@ body {
     margin-right: -188px;
     position: relative;
     z-index: 2;
-    background: #fff url('../../img/icons/home.svg') 33px 50% no-repeat;
+    background: #fff url('../img/icons/home.svg') 33px 50% no-repeat;
     color: #FFFFFF;
 
     box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.01), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.02), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
@@ -341,7 +341,7 @@ body {
         margin: 0 0px 30px 0;
         height: 100%;
         display: block;
-        background: #fff url('../../img/icons/home.svg') 33px 23% no-repeat;
+        background: #fff url('../img/icons/home.svg') 33px 23% no-repeat;
     }
 
     @media (max-width: 767.98px) {
@@ -520,7 +520,7 @@ body {
         width: 210px;
         height: 11px;
         transform: translate(86.5%, 0);
-        background: url('../../img/main/how/lineitem.svg') 0 0 / 100% no-repeat;
+        background: url('../img/main/how/lineitem.svg') 0 0 / 100% no-repeat;
 
         @media (max-width: 1199.98px) {
             width: 170px;
